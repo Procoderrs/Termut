@@ -588,6 +588,15 @@
   .bg-\[url\(\'\.\.\/images\/hero\.jpg\'\)\] {
     background-image: url('../images/hero.jpg');
   }
+  .bg-\[url\(\'\.\.\/images\/m\'\)\] {
+    background-image: url('../images/m');
+  }
+  .bg-\[url\(\'\.\.\/images\/map\'\)\] {
+    background-image: url('../images/map');
+  }
+  .bg-\[url\(\'\.\.\/images\/map-bg\.webp\'\)\] {
+    background-image: url('../images/map-bg.webp');
+  }
   .bg-\[url\(\.\/images\/map-bg\.webp\)\] {
     background-image: url(./images/map-bg.webp);
   }
@@ -1226,6 +1235,11 @@
   .xl\:max-w-\[1160px\] {
     @media (width >= 75rem) {
       max-width: 1160px;
+    }
+  }
+  .xl\:max-w-\[1660px\] {
+    @media (width >= 75rem) {
+      max-width: 1660px;
     }
   }
   .xl\:gap-5 {
