@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Parallax Effect</title>
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- Section 1 -->
+  <section class=" py-16  flex flex-col gap-y-5 items-center justify-center bg-[url(./images/map-bg.webp)]">
+    <span class="text-blue font-kalam">Watch Our Story</span>
+    <h1 class="text-4xl text-center font-bold">Unforgettable Travel Experiences <br>
+Get Your Guide</h1>
+
+<div class="flex items-center justify-center gap-5">
+<button
+    type="submit"
+    class="btn-3-swipe py-3 px-8 flex items-center justify-center font-semibold text-sm gap-2 bg-pink-200 text-amber-900 rounded-[100px] shadow-md ">btn1</button>
+  <button
+    type="submit"
+    class="btn-3-swipe py-3 px-8 flex items-center justify-center font-semibold text-sm gap-2 bg-pink-200 text-amber-900 rounded-[100px] shadow-md ">btn1</button>
+</div>
+  </section>
+
+  <!-- 🌄 Parallax Section -->
+  <section 
+    class="relative h-[500px] bg-fixed bg-center bg-cover flex items-center justify-center" 
+    style="background-image: url(./images/video-bg.jpg);"
+  >
+    <div class="bg-black/50 text-white p-8 rounded-xl text-center">
+      <h2 class="text-3xl font-semibold mb-3">Experience the Mountains</h2>
+      <p class="max-w-xl leading-relaxed">
+        Feel the tranquility as you scroll through this beautiful parallax view. 
+        The image stays fixed while content moves — creating depth and elegance.
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="h-screen flex items-center justify-center bg-gray-100">
+    <h2 class="text-3xl font-bold">Keep Scrolling...</h2>
+  </section>
+
+</body>
+</html>
