@@ -1,0 +1,184 @@
+@import "tailwindcss";
+
+
+/* theme-variables */
+
+
+@theme{
+  --font-kalam:"Kalam", sans-serif;
+--font-body: "Manrope",sans-serif;
+--color-blue:#1ca8cb;
+--color-border:#eeee;
+--color-btn-bg: rgba(255,255,255, .25);
+--color-bg:#0a1f24;
+--color-gray:#687179;
+--color-light-gray:#f7f7f7;
+--color-green:#113d48;
+--color-dark:#oa1f24;
+--color-gray-2:rgb(169, 175, 191);
+--color-black:#181818;
+--color-light-blue:#e1eff3;
+
+--breakpoint-xl:75rem; /* 1200px */
+--breakpoint-next-lg:67.5rem; /* 1080px */
+--breakpoint-sm:36rem; /* 576px */
+--breakpoint-lg:62rem;/* 992px */
+}
+
+.btn-swipe{
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-swipe::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: black;
+    transform: translateX(-100%);
+    transition: transform 0.6s ease-in-out;
+    z-index: 0;
+  }
+
+  .btn-swipe:hover::before {
+    transform: translateX(0);
+  }
+
+  .btn-swipe > * {
+  position: relative;
+  z-index: 10;
+}
+
+
+
+
+
+
+.btn-2-swipe{
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-2-swipe::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #1ca8cb;
+    transform: translateX(-100%);
+    transition: transform 0.6s ease-in-out;
+    z-index: 0;
+  }
+
+  .btn-2-swipe:hover::before {
+    transform: translateX(0);
+  }
+
+  .btn-2-swipe > * {
+  position: relative;
+  z-index: 10;
+}
+
+/*  */
+
+
+.btn-3-swipe{
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-3-swipe::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #181818;
+    transform: translateX(-100%);
+    transition: transform 0.6s ease-in-out;
+    z-index: 0;
+  }
+
+  .btn-3-swipe:hover::before {
+    transform: translateX(0);
+  }
+
+  .btn-3-swipe > * {
+  position: relative;
+  z-index: 10;
+}
+
+
+
+.header-main.nav-up {
+    transform: translateY(-100%);
+}
+ 
+/* When scrolling up - show header with background */
+.header-main.nav-down {
+    transform: translateY(0);
+    background-color: #1ca8cb;
+    padding: 12px 0  ;
+    height: auto;
+}
+
+
+.header-main.nav-up {
+  transform: translateY(-100%);
+}
+
+/* When scrolling up - show header with background */
+.header-main.nav-down {
+  transform: translateY(0);
+  background-color: #1ca8cb;
+  padding: 12px 0;
+  height: auto;
+}
+
+/* ✅ From start (0px) up to 1200px — black background */
+@media (max-width: 1200px) {
+  .header-main.nav-up {
+  transform: translateY(-100%);
+}
+
+/* When scrolling up - show header with background */
+.header-main.nav-down {
+  transform: translateY(0);
+  background-color: black;
+  
+  height: auto;
+}
+
+  
+ 
+}
+
+
+
+@keyframes floatUpDown{
+
+
+0%,100%{
+  transform: translateY(0);
+}
+50%{
+  transform: translateY(-25px);
+}
+}
+
+.floating-box{
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+
+@keyframes floathorizontal{
+
+
+0%,100%{
+  transform: translateX(0px);
+}
+50%{
+  transform: translateX(25px);
+}
+}
+
+.horizontal-box{
+  animation: floathorizontal 3s ease-in-out infinite;
+}
