@@ -23,6 +23,7 @@
 --breakpoint-next-lg:67.5rem; /* 1080px */
 --breakpoint-sm:36rem; /* 576px */
 --breakpoint-lg:62rem;/* 992px */
+--breakpoint-xlg:100rem; /* 1600px */
 }
 
 .btn-swipe{
