@@ -378,6 +378,9 @@
   .w-full {
     width: 100%;
   }
+  .max-w-\[16px\] {
+    max-width: 16px;
+  }
   .max-w-\[700px\] {
     max-width: 700px;
   }
@@ -1203,6 +1206,11 @@
   .xl\:w-\[780px\] {
     @media (width >= 75rem) {
       width: 780px;
+    }
+  }
+  .xl\:max-w-\[1\] {
+    @media (width >= 75rem) {
+      max-width: 1;
     }
   }
   .xl\:max-w-\[11\] {
