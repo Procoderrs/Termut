@@ -63,32 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-/* hotels-slider */
-
-/* const slider = document.querySelector('.slider');
-  const slides = slider.children.length;
-  const slideWidth = 320; // 300px + margins
-  const visibleSlides = Math.floor(window.innerWidth / slideWidth); // how many fit on screen
-  let index = 0;
-
-  function slideShow() {
-    // Calculate max index before blank space
-    const maxIndex = slides - visibleSlides;
-
-    if (index < maxIndex) {
-      index++;
-    } else {
-      index = 0; // go back to start (loop)
-    }
-
-    slider.style.transform = `translateX(-${index * slideWidth}px)`;
-    // Add smooth transition
-    slider.style.transition = "transform 1.2s ease-in-out";
-    slider.style.transform = `translateX(-${index * slideWidth}px)`;
-  }
- */
- 
-
 
   /* swiper-slider */
 
@@ -110,3 +84,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
  
+  const playButton = document.getElementById('playButton');
+  const videoModal = document.getElementById('videoModal');
+  const closeVideo = document.getElementById('closeVideo');
+  const youtubePlayer = document.getElementById('youtubePlayer');
+
+  // Replace this with your YouTube video ID
+  const YT_VIDEO_ID = 'HC-tgFdIcB0';
+
+  playButton.addEventListener('click', () => {
+    document.body.classList.add('overflow-hidden');
+    videoModal.classList.remove('hidden');
+    videoModal.classList.add('flex');
+    // load YouTube video but do NOT autoplay
+    youtubePlayer.src = `https://www.youtube.com/embed/${YT_VIDEO_ID}?autoplay=0&rel=0`;
+  });
+
+  closeVideo.addEventListener('click', () => {
+    videoModal.classList.add('hidden');
+    document.body.classList.remove('overflow-hidden');
+    videoModal.classList.remove('flex');
+    // stop the video
+    youtubePlayer.src = "";
+  });

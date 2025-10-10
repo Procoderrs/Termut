@@ -18,12 +18,14 @@
 --color-gray-2:rgb(169, 175, 191);
 --color-black:#181818;
 --color-light-blue:#e1eff3;
+--color-btn:#113d48;
 
 --breakpoint-xl:75rem; /* 1200px */
 --breakpoint-next-lg:67.5rem; /* 1080px */
 --breakpoint-sm:36rem; /* 576px */
 --breakpoint-lg:62rem;/* 992px */
 --breakpoint-xlg:100rem; /* 1600px */
+--breakpoint-xsm:26.563rem;/* 425px */
 }
 
 .btn-swipe{
@@ -106,7 +108,60 @@
   z-index: 10;
 }
 
+/* btn-4 */
 
+
+.btn-4-swipe{
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-4-swipe::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #181818;
+    transform: translateX(-100%);
+    transition: transform 0.6s ease-in-out;
+    z-index: 0;
+  }
+
+  .btn-4-swipe:hover::before {
+    transform: translateX(0);
+  }
+
+  .btn-4-swipe > * {
+  position: relative;
+  z-index: 10;
+}
+
+
+
+/* btn-5 */
+.btn-5-swipe{
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-5-swipe::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #1ca8cb;
+    transform: translateX(-100%);
+    transition: transform 0.6s ease-in-out;
+    z-index: 0;
+  }
+
+  .btn-5-swipe:hover::before {
+    transform: translateX(0);
+  }
+
+  .btn-5-swipe > * {
+  position: relative;
+  z-index: 10;
+}
+/* nav */
 
 .header-main.nav-up {
     transform: translateY(-100%);
