@@ -19,13 +19,19 @@
 --color-black:#181818;
 --color-light-blue:#e1eff3;
 --color-btn:#113d48;
+--color-star:rgb(241, 101, 34);
+--color-reviews:#1d3638;
+--color-input:#727171;
 
+
+--breakpoint-bxl:68.75; /* 1100px */
 --breakpoint-xl:75rem; /* 1200px */
 --breakpoint-next-lg:67.5rem; /* 1080px */
 --breakpoint-sm:36rem; /* 576px */
 --breakpoint-lg:62rem;/* 992px */
 --breakpoint-xlg:100rem; /* 1600px */
 --breakpoint-xsm:26.563rem;/* 425px */
+
 }
 
 .btn-swipe{
@@ -237,4 +243,18 @@
 
 .horizontal-box{
   animation: floathorizontal 3s ease-in-out infinite;
+}
+
+
+.vertical_box{
+  animation: floatVertical 3s ease-in-out infinite;
+}
+
+@keyframes floatVertical{
+  0% ,100%{
+    transform:translateY(0px)
+  }
+  50%{
+    transform: translateY(25px);
+  }
 }
