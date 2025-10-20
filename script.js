@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const swiper = new Swiper(".hotel-slider", {
 	loop: true,
 	speed: 800,
-	spaceBetween: 30, // remove gap
+	spaceBetween: 20, // remove gap
 
 	autoplay: {
 		delay: 5000,
@@ -76,6 +76,9 @@ const swiper = new Swiper(".hotel-slider", {
 		320: { slidesPerView: 1 },
 		576: { slidesPerView: 2 },
 		768: { slidesPerView: 3 },
+		1200:{ slidesPerView: 4,
+			spaceBetween:10,
+		 },
 	},
 });
 

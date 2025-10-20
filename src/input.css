@@ -8,7 +8,7 @@
   --font-kalam:"Kalam", sans-serif;
 --font-body: "Manrope",sans-serif;
 --color-blue:#1ca8cb;
---color-border:#eeee;
+--color-border:#e1e4e5;
 --color-btn-bg: rgba(255,255,255, .25);
 --color-bg:#0a1f24;
 --color-gray:#687179;
@@ -22,6 +22,7 @@
 --color-star:rgb(241, 101, 34);
 --color-reviews:#1d3638;
 --color-input:#727171;
+--color-foooter-bg:#242625;
 
 
 --breakpoint-bxl:68.75; /* 1100px */
@@ -31,6 +32,7 @@
 --breakpoint-lg:62rem;/* 992px */
 --breakpoint-xlg:100rem; /* 1600px */
 --breakpoint-xsm:26.563rem;/* 425px */
+--breakpoint-xxlg:87.5rem;/* 1400px */
 
 }
 
